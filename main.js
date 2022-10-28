@@ -22,7 +22,9 @@ function mainMenu() {
 
   // Take action based on menu selection
   if (selection === "first40") {
+    
     firstTo40();
+    drawArray();
   } else if (selection === "last50") {
     lastTo50();
   } else if (selection === "random100") {
