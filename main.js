@@ -23,31 +23,31 @@ function mainMenu() {
   // Take action based on menu selection
   if (selection === "first40") {
     firstTo40();
-    drawArray();
+    
   } else if (selection === "last50") {
     lastTo50();
-    drawArray();
+    
   } else if (selection === "random100") {
     randomTo100();
-    drawArray();
+    
   } else if (selection === "addRandom") {
     addRandomGrade();
-    drawArray();
+    
   } else if (selection === "removeLast") {
     removeLastGrade();
-    drawArray();
+    
   } else if (selection === "count50") {
     countBelow50();
-    drawArray();
+    
   } else if (selection === "change50") {
     lowGradesTo50();
-    drawArray();
+    
   } else if (selection === "increase10") {
     increaseGradesBy10();
-    drawArray();
+    
   } else if (selection === "decrease10") {
     decreaseGradesBy10();
-    drawArray();
+    
   }
 
   // Redraw array to show any changes
@@ -60,16 +60,19 @@ function mainMenu() {
 function firstTo40() {
   // Set the grade of the first student to 40.
   outputEl.innerHTML = "First grade to 40";
+  grades[0] = 40;
 }
 
 function lastTo50() {
   // Set the grade of the last student to 50.
   outputEl.innerHTML = "Last grade to 50";
+  grades[5] = 50
 }
 
 function randomTo100() {
   // Set the grade of a random student to 100.
   outputEl.innerHTML = "Random grade to 100";
+  grades[randomInt(grades)] = 100
 }
 
 function addRandomGrade() {
