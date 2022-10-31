@@ -22,25 +22,32 @@ function mainMenu() {
 
   // Take action based on menu selection
   if (selection === "first40") {
-    
     firstTo40();
     drawArray();
   } else if (selection === "last50") {
     lastTo50();
+    drawArray();
   } else if (selection === "random100") {
     randomTo100();
+    drawArray();
   } else if (selection === "addRandom") {
     addRandomGrade();
+    drawArray();
   } else if (selection === "removeLast") {
     removeLastGrade();
+    drawArray();
   } else if (selection === "count50") {
     countBelow50();
+    drawArray();
   } else if (selection === "change50") {
     lowGradesTo50();
+    drawArray();
   } else if (selection === "increase10") {
     increaseGradesBy10();
+    drawArray();
   } else if (selection === "decrease10") {
     decreaseGradesBy10();
+    drawArray();
   }
 
   // Redraw array to show any changes
