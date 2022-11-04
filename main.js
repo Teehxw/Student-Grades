@@ -74,7 +74,7 @@ function randomTo100() {
   outputEl.innerHTML = "Random grade to 100";
 
   let randGrade = randomElement(grades)
- randGrade = 100;
+ randGrade * 100;
 }
 
 function addRandomGrade() {
